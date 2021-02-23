@@ -1,9 +1,9 @@
-# nlw04-go.move
+# go.move
 Application aimed at improving the quality of life of programmers
 
 ## Instalation
 
-npm install 
+`npm install` 
 
 ## Start
 
