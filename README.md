@@ -3,7 +3,9 @@ Application aimed at improving the quality of life of programmers
 
 ## Components
 
-[Node.js](https://nodejs.org/en/download/)
+* [React.js](https://pt-br.reactjs.org/)
+* [Node.js](https://nodejs.org/en/download/)
+* [Next.js](https://nextjs.org/)
 
 ## Instalation and Run
 
