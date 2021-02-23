@@ -1,10 +1,12 @@
 # go.move
 Application aimed at improving the quality of life of programmers
 
-## Instalation
+## Instalation and Run
 
-`npm install` 
+1 • install packages 
 
-## Start
+`npm install`
 
-yarn dev
+2 • Run in localhost
+
+`yarn dev`
