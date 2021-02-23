@@ -13,7 +13,7 @@
     --title: #2e384d;
     --red: #e83f5b;
     --green: #4cd62b;
-    --blue: #5965e0;
+    --blue: #6571f1;
     --blue-dark: #4953b8;
     --blue-twitter: #2aa9e0;
 }
@@ -36,7 +36,7 @@ body {
 }
 
 body, input, textarea, button {
-    font: 400 16rem "Inter", sans-serif;
+    font: 400 1rem "Inter", sans-serif;
 }
 
 button {
