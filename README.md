@@ -21,12 +21,25 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 
 * **React Native CLI** is a package that contains tools and helpers for React Native projects in form of a command line tool.  [Download React Native CLI](https://facebook.github.io/react-native/docs/getting-started)
 
-## Instalation and Run
+## How to Install
 
-1 • install packages 
+* To download the project follow the instructions bellow:
 
-```npm install```
+```
+1. git clone https://github.com/YuriPerro/nlw04-go.move.git
+2. cd go.move
+```
 
-2 • Run in localhost
+* Install the dependencies and start the server:
 
-```yarn dev```
+```
+3. yarn install
+4. yarn dev
+```
+
+or
+
+```
+3. npm install
+4. npm dev
+```
