@@ -13,8 +13,8 @@ Application aimed at improving the quality of life of programmers
 
 1 • install packages 
 
-`npm install`
+```npm install```
 
 2 • Run in localhost
 
-`yarn dev`
+```yarn dev```
