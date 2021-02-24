@@ -26,7 +26,7 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 * To download the project follow the instructions bellow:
 
 ```
-1. git clone https://github.com/YuriPerro/nlw04-go.move.git
+1. git clone https://github.com/YuriPerro/go.move.git
 2. cd go.move
 ```
 
