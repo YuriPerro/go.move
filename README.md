@@ -9,6 +9,18 @@ Application aimed at improving the quality of life of programmers
 * [Typescript.js](https://www.typescriptlang.org/)
 * [Next.js](https://nextjs.org/)
 
+## Getting Started
+
+These instructions will get you a copy of the full project up and running on your local machine for development and testing purposes.
+
+The project can be built with npm or yarn, so choose one of the approach bellow in case you don't have any installed on your system.
+
+* **Npm** is distributed with Node.js which means that when you download Node.js, you automatically get npm installed on your computer. [Download Node.js](https://nodejs.org/en/download/)
+
+* **Yarn** is a package manager built by Facebook Team and seems to be faster than npm in general.  [Download Yarn](https://yarnpkg.com/en/docs/install)
+
+* **React Native CLI** is a package that contains tools and helpers for React Native projects in form of a command line tool.  [Download React Native CLI](https://facebook.github.io/react-native/docs/getting-started)
+
 ## Instalation and Run
 
 1 • install packages 
