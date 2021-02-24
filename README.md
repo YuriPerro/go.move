@@ -1,4 +1,4 @@
-(https://imgur.com/a/MOVE60L)
+[go.move](https://imgur.com/a/MOVE60L)
 
 # go.move
 Application aimed at improving the quality of life of programmers
