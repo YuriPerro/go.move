@@ -42,14 +42,15 @@
     
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .challengeActive header {
     color: var(--blue);
     font-weight: 600;
     font-size: 1.25rem;
-    padding: 0 2rem 1.5rem;
-    border-bottom: 1px solid var(--gray-line);
+    padding: 1rem 1rem 1rem 1rem;
+    border-bottom: 1px solid var(--gray-line);   
 }
 
 .challengeActive main {
@@ -58,6 +59,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .challengeActive main strong {
@@ -73,14 +76,16 @@
 
 .challengeActive footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 10rem 10rem;
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .challengeActive footer button {
     height: 2.5rem;
     margin-bottom: 1rem;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
