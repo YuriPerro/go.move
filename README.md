@@ -1,3 +1,5 @@
+![go move](https://i.imgur.com/WXeFY6f.png)
+
 # go.move
 Application aimed at improving the quality of life of programmers
 
@@ -7,12 +9,37 @@ Application aimed at improving the quality of life of programmers
 * [Typescript.js](https://www.typescriptlang.org/)
 * [Next.js](https://nextjs.org/)
 
-## Instalation and Run
+## Getting Started
 
-1 • install packages 
+These instructions will get you a copy of the full project up and running on your local machine for development and testing purposes.
 
-`npm install`
+The project can be built with npm or yarn, so choose one of the approach bellow in case you don't have any installed on your system.
 
-2 • Run in localhost
+* **Npm** is distributed with Node.js which means that when you download Node.js, you automatically get npm installed on your computer. [Download Node.js](https://nodejs.org/en/download/)
 
-`yarn dev`
+* **Yarn** is a package manager built by Facebook Team and seems to be faster than npm in general.  [Download Yarn](https://yarnpkg.com/en/docs/install)
+
+* **React Native CLI** is a package that contains tools and helpers for React Native projects in form of a command line tool.  [Download React Native CLI](https://facebook.github.io/react-native/docs/getting-started)
+
+## How to Install
+
+* To download the project follow the instructions bellow:
+
+```
+1. git clone https://github.com/YuriPerro/go.move.git
+2. cd go.move
+```
+
+* Install the dependencies and start the server:
+
+```
+3. yarn install
+4. yarn dev
+```
+
+or
+
+```
+3. npm install
+4. npm dev
+```
