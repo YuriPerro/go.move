@@ -1,8 +1,5 @@
 ![go move](https://i.imgur.com/4dEWnKD.png)
 
-![Thiago Marinho](https://pbs.twimg.com/profile_banners/41742474/1490016588/1500x500)
-
-
 # go.move
 Application aimed at improving the quality of life of programmers
 
