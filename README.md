@@ -1,4 +1,4 @@
-![go move](https://i.imgur.com/4dEWnKD.png)
+![go move](https://i.imgur.com/WXeFY6f.png)
 
 # go.move
 Application aimed at improving the quality of life of programmers
