@@ -1,33 +1,86 @@
 .divContainer {
-    width: 70px;
-    height: 30px;
-    background: var(--title);
-    border-radius: 60px;
-    
-    display: flex;
-    align-items: center;
-    text-align: center;
+    width: 30px;
+    height: 60px;
+    background: var(--white);
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 
     position: absolute;
+    margin-top: 3rem;
+    margin-left: 3rem;
 
-    margin-top: 5rem;
-    margin-left: 5rem;
+    transition: background 0.2s;
 }
 
-.divContainer button {
+.divContainer input{
     align-self: flex-start;
     width: 26px;
     height: 26px;
-    background: var(--white);
+    background: #e83f5b;
     border-radius: 50px;
-    margin-left: 3px;
     border: 0px;
+    margin-top: 3px;
+    margin-left: 2px;
+
+    position: absolute;
 
     outline: none;
     box-shadow: none;
+
+    transition: background 0.5s, margin-top 0.2s;
+
+    appearance: none;
 }
 
-.divContainer button:active {
+.divContainer > input:checked{
+    margin-top: 31px;
+    background: var(--gray-line)
+}
+
+.divContainerDark {
+    width: 30px;
+    height: 60px;
+    background: #2e384d;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 3rem;
+
+    transition: background 0.2s;
+}
+
+.divContainerDark input{
+    align-self: flex-start;
+    width: 26px;
+    height: 26px;
+    background: #e83f5b;
+    border-radius: 50px;
+    border: 0px;
+    margin-top: 3px;
+    margin-left: 2px;
+
+    position: absolute;
+
     outline: none;
     box-shadow: none;
+
+    transition: background 0.5s, margin-top 0.2s;
+
+    appearance: none;
 }
+
+.divContainerDark > input:checked{
+    margin-top: 31px;
+    background: var(--gray-line)
+}
+
+.faSun {
+    transform: translateX(50%);
+}
+
+.faMoon {
+    transform: translateX(50%);
+}
+
