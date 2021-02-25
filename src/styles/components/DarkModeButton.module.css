@@ -1,0 +1,33 @@
+.divContainer {
+    width: 70px;
+    height: 30px;
+    background: var(--title);
+    border-radius: 60px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
+.divContainer button {
+    align-self: flex-start;
+    width: 26px;
+    height: 26px;
+    background: var(--white);
+    border-radius: 50px;
+    margin-left: 3px;
+    border: 0px;
+
+    outline: none;
+    box-shadow: none;
+}
+
+.divContainer button:active {
+    outline: none;
+    box-shadow: none;
+}

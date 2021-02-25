@@ -52,20 +52,28 @@
     font-weight: 600;
 
     transition: background-color 0.2s;
+    outline: none;
+    box-shadow: none;
 }
 
 .countdownButton:not(:disabled):hover {
     background: var(--blue-dark);
+    outline: none;
+    box-shadow: none;
 }
 
 .countdownButtonActive{
     background: var(--white);
     color: var(--title);
+    outline: none;
+    box-shadow: none;
 }
 
 .countdownButtonActive:not(:disabled):hover{
     background: var(--red);
     color: var(--white);
+    outline: none;
+    box-shadow: none;
 }
 
 .countdownButton:disabled { 

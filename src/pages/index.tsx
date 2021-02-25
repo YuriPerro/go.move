@@ -8,32 +8,36 @@ import Head from 'next/head';
 import styles from '../styles/pages/Home.module.css'
 import { ChallengeBox } from "../components/ChallengeBox";
 import { CountdownProvider } from "../contexts/CountdownContext";
+import { DarkModeButton } from "../components/DarkModeButton";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title> Início • go.move</title>
-      </Head>
+    <>
+      <DarkModeButton />
+      <div className={styles.container}>
+        <Head>
+          <title> Início • go.move</title>
+        </Head>
 
-      <ExperienceBar />
+        <ExperienceBar />
 
-      <CountdownProvider>
-        <section>
-          <div>
-            <Profile />
-            <CompletedChallenges />
-            <Countdown />
-          </div>
+        <CountdownProvider>
+          <section>
+            <div>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
 
-          <div>
-            <ChallengeBox />
-          </div>
-        </section>
-        <footer>
-          Developed with 🧡 by Yuri Baumgartner
+            <div>
+              <ChallengeBox />
+            </div>
+          </section>
+          <footer>
+            Developed with 🧡 by Yuri Baumgartner
         </footer>
-      </CountdownProvider>
-    </div>
+        </CountdownProvider>
+      </div>
+    </>
   )
 }
