@@ -3,10 +3,14 @@
     align-items: center;
 }
 
-.profileContainer > img {
+.profileContainer > p > img {
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
+
+    border: 2px solid var(--title);
+    padding: 2px;
+    box-shadow: 0 0 10px rgba(136, 136, 136, 0.7);
 }
 
 .profileContainer div {
