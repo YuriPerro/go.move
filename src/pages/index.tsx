@@ -30,6 +30,9 @@ export default function Home() {
             <ChallengeBox />
           </div>
         </section>
+        <footer>
+          Developed with 🧡 by Yuri Baumgartner
+        </footer>
       </CountdownProvider>
     </div>
   )
