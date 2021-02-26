@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { ChallengesContext, ChallengesProvider } from '../contexts/ChallengesContext'
+import { ChallengesContext } from '../contexts/ChallengesContext'
 import styles from '../styles/components/LevelUpModal.module.css'
  
 export function LevelUpModal () {
@@ -11,17 +11,15 @@ export function LevelUpModal () {
             <div className={styles.container}>
                 <header> {level} </header>
 
-                <strong> Parabéns </strong>
-
-                <p> Você alcançou um novo level </p>
-
+                <strong> Parabéns! </strong>
+                <p> Você alcançou um novo nível </p>
+                
                 <button
                     onClick={closeLevelUpModal}
                     type="button"
                 >
                     <img src="/icons/close.svg" alt="Fechar modal"></img>
                 </button>
-
             </div>
         </div>
     )
