@@ -1,0 +1,37 @@
+.container{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 10rem;
+
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.container > img {
+    max-width: 70px;
+    max-height: 70px;
+
+    top: 1rem;
+    position: absolute;
+}
+
+.divIcons{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconHome {
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.iconMedal {
+    outline: none;
+}

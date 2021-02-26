@@ -33,19 +33,11 @@ export const ChallengesContext = createContext({} as ChallengesContextData);
 
 export function ChallengesProvider({ children, ...rest }: ChallengesProviderProps) {
 
-    console.log(rest)
-
     const [level, setLevel] = useState(rest.level ? rest.level : 1);
     const [currentXp, setCurrentXp] = useState(rest.currentXp ? rest.currentXp : 0);
     const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ? rest.challengesCompleted : 0);
     const [activeChallenge, setActiveChallenge] = useState(null);
     const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
-
-    console.log('-------------')
-
-    console.log(level)
-    console.log(currentXp)
-    console.log(challengesCompleted)
 
     const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 

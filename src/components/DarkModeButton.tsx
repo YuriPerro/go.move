@@ -12,10 +12,10 @@ export function DarkModeButton() {
     }
 
     useEffect(() => {
-        active ?
+        /*active ?
             document.getElementById('divContr').className = styles.divContainerDark
             :
-            document.getElementById('divContr').className = styles.divContainer
+            document.getElementById('divContr').className = styles.divContainer*/
     }, [active])
 
     return (

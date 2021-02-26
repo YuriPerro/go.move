@@ -19,7 +19,9 @@
 .experienceBar > div > div {
     height: 4px;
     border-radius: 4px;
-    background-color: var(--green);
+    background-color: var(--secondary);
+
+    box-shadow: 0 0 30px var(--secondary);
 }
 
 span.currentExperience {

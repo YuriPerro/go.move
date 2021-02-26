@@ -16,6 +16,10 @@
     --blue: #6571f1;
     --blue-dark: #4953b8;
     --blue-twitter: #2aa9e0;
+
+    --primary: #ff8282;
+    --secondary: #1abeb6;
+    --secondary-hover: #18ABA4;
 }
 
 @media(max-width: 1080px){

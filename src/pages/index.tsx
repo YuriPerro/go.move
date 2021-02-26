@@ -12,6 +12,8 @@ import { ChallengeBox } from "../components/ChallengeBox";
 import { CountdownProvider } from "../contexts/CountdownContext";
 import { DarkModeButton } from "../components/DarkModeButton";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
+import { SideBarProvider } from "../contexts/SideBarContext";
+import { SideBar } from "../components/SideBar";
 
 interface HomeProps {
   level: number;
@@ -28,30 +30,33 @@ export default function Home(props) {
         currentXp={props.currentXp}
         challengesCompleted={props.challengesCompleted
         }>
-        <div className={styles.container}>
-          <Head>
-            <title> Início • go.move</title>
-          </Head>
+        <SideBarProvider>
+          <SideBar />
+          <div className={styles.container}>
+            <Head>
+              <title> Início • go.move</title>
+            </Head>
 
-          <ExperienceBar />
+            <ExperienceBar />
 
-          <CountdownProvider>
-            <section>
-              <div>
-                <Profile />
-                <CompletedChallenges />
-                <Countdown />
-              </div>
+            <CountdownProvider>
+              <section>
+                <div>
+                  <Profile />
+                  <CompletedChallenges />
+                  <Countdown />
+                </div>
 
-              <div>
-                <ChallengeBox />
-              </div>
-            </section>
-            <footer>
-              Developed with 🧡 by Yuri Baumgartner
+                <div>
+                  <ChallengeBox />
+                </div>
+              </section>
+              <footer>
+                Developed with 🧡 by Yuri Baumgartner
         </footer>
-          </CountdownProvider>
-        </div>
+            </CountdownProvider>
+          </div>
+        </SideBarProvider>
       </ChallengesProvider>
     </>
   )
