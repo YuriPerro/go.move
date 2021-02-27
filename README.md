@@ -43,3 +43,6 @@ or
 3. npm install
 4. npm dev
 ```
+
+---
+<p align="center">Developed with 🧡 by Yuri Baumgartner</p>
