@@ -1,8 +1,10 @@
 import { createContext, ReactNode, useState } from "react";
 import { HOME, RANKING } from "../constants/variables";
 
+
 interface SideBarData {
-    changeTab: () => void
+    tableActive: string
+    changeTab: (route: string) => void
 }
 
 interface SideBarProviderProps {
@@ -12,14 +14,14 @@ interface SideBarProviderProps {
 export const SideBarContext = createContext({} as SideBarData);
 
 export function SideBarProvider({ children }: SideBarProviderProps) {
-    const [tableActive, setTableActive] = useState(HOME);
+    const [tableActive, setTableActive] = useState(RANKING);
 
-    function changeTab() {
-        tableActive == HOME ? setTableActive(RANKING) : setTableActive(HOME)
+    function changeTab(route: string) {
+        route == HOME ? setTableActive(RANKING) : setTableActive(HOME)
     }
 
     return (
-        <SideBarContext.Provider value={{changeTab}}>
+        <SideBarContext.Provider value={{ changeTab, tableActive }}>
             {children}
         </SideBarContext.Provider>
     )

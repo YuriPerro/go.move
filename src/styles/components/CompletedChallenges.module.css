@@ -13,9 +13,11 @@
 }
 
 .completedChallengesContainer span:first-child{
+    color: var(--text);
     font-size: 1.25rem;
 }
 
 .completedChallengesContainer span:last-child{
+    color: var(--text);
     font: 800 1.8rem "Rajdhani", sans-serif;
 }

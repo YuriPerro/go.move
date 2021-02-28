@@ -20,6 +20,8 @@
     --primary: #ff8282;
     --secondary: #1abeb6;
     --secondary-hover: #18ABA4;
+
+    --experience-secondary: #1abeb6;
 }
 
 @media(max-width: 1080px){

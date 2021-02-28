@@ -17,7 +17,7 @@
     align-self: flex-start;
     width: 26px;
     height: 26px;
-    background: #e83f5b;
+    background: var(--primary);
     border-radius: 50px;
     border: 0px;
     margin-top: 3px;
@@ -35,7 +35,7 @@
 
 .divContainer > input:checked{
     margin-top: 31px;
-    background: var(--gray-line)
+    background: var(--secondary)
 }
 
 .faSun {

@@ -14,6 +14,7 @@ import { DarkModeButton } from "../components/DarkModeButton";
 import { ChallengesProvider } from "../contexts/ChallengesContext";
 import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
+import { DarkModeProvider } from "../contexts/DarkModeContext";
 
 interface HomeProps {
   level: number;
@@ -25,39 +26,41 @@ export default function Home(props) {
   return (
     <>
       <DarkModeButton />
-      <ChallengesProvider
-        level={props.level}
-        currentXp={props.currentXp}
-        challengesCompleted={props.challengesCompleted
-        }>
-        <SideBarProvider>
-          <SideBar />
-          <div className={styles.container}>
-            <Head>
-              <title> Início • go.move</title>
-            </Head>
+      <DarkModeProvider>
+        <ChallengesProvider
+          level={props.level}
+          currentXp={props.currentXp}
+          challengesCompleted={props.challengesCompleted
+          }>
+          <SideBarProvider>
+            <SideBar />
+            <div className={styles.container}>
+              <Head>
+                <title> Início • go.move</title>
+              </Head>
 
-            <ExperienceBar />
+              <ExperienceBar />
 
-            <CountdownProvider>
-              <section>
-                <div>
-                  <Profile />
-                  <CompletedChallenges />
-                  <Countdown />
-                </div>
+              <CountdownProvider>
+                <section>
+                  <div>
+                    <Profile />
+                    <CompletedChallenges />
+                    <Countdown />
+                  </div>
 
-                <div>
-                  <ChallengeBox />
-                </div>
-              </section>
-              <footer>
-                Developed with 🧡 by Yuri Baumgartner
-        </footer>
-            </CountdownProvider>
-          </div>
-        </SideBarProvider>
-      </ChallengesProvider>
+                  <div>
+                    <ChallengeBox />
+                  </div>
+                </section>
+                <footer>
+                  Developed with 🧡 by Yuri Baumgartner
+                </footer>
+              </CountdownProvider>
+            </div>
+          </SideBarProvider>
+        </ChallengesProvider>
+      </DarkModeProvider>
     </>
   )
 }

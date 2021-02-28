@@ -7,7 +7,7 @@ export function LevelUpModal () {
     const { level, closeLevelUpModal } = useContext(ChallengesContext)
 
     return(
-        <div className={styles.overlay}>
+        <div className={styles.overlay} onClick={() => closeLevelUpModal()}>
             <div className={styles.container}>
                 <header> {level} </header>
 
