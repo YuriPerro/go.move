@@ -1,5 +1,5 @@
 .overlay {
-    background: rgba(242, 243, 245, 0.8);
+    background: var(--background-modal);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -9,10 +9,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .container {
-    background: var(--white);
+    background: var(--background-modal-center);
     width: 100%;
     max-width: 400px;
     padding: 2rem 3rem;

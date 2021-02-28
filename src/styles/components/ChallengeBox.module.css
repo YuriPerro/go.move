@@ -10,6 +10,9 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    transition: background .4s;
+
 }
 
 .challengeNotActive {

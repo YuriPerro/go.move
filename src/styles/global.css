@@ -17,11 +17,12 @@
     --blue-dark: #4953b8;
     --blue-twitter: #2aa9e0;
 
+    --background-modal: rgba(242, 243, 245, 0.8);
+    --background-modal-center: rgba(242, 243, 245, 1);
+
     --primary: #ff8282;
     --secondary: #1abeb6;
     --secondary-hover: #18ABA4;
-
-    --experience-secondary: #1abeb6;
 }
 
 @media(max-width: 1080px){
@@ -39,6 +40,8 @@
 body {
     background: var(--background);
     color: var(--text);
+
+    transition: background .4s;
 }
 
 body, input, textarea, button {

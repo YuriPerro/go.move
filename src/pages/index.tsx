@@ -3,7 +3,7 @@ import { Countdown } from "../components/Countdown";
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 
-import { GetServerSideProps, GetStaticPathsResult } from 'next'
+import { GetServerSideProps } from 'next'
 
 import Head from 'next/head';
 
@@ -16,17 +16,13 @@ import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
 import { DarkModeProvider } from "../contexts/DarkModeContext";
 
-interface HomeProps {
-  level: number;
-  currentXp: number;
-  challengesCompleted: number;
-}
-
 export default function Home(props) {
   return (
     <>
-      <DarkModeButton />
-      <DarkModeProvider>
+      <DarkModeProvider
+        theme={props.theme}
+      >
+        <DarkModeButton />
         <ChallengesProvider
           level={props.level}
           currentXp={props.currentXp}
@@ -67,13 +63,14 @@ export default function Home(props) {
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
-  const { level, currentXp, challengesCompleted } = ctx.req.cookies;
+  const { level, currentXp, challengesCompleted, theme } = ctx.req.cookies;
 
   return {
     props: {
       level: Number(level),
       currentXp: Number(currentXp),
-      challengesCompleted: Number(challengesCompleted)
+      challengesCompleted: Number(challengesCompleted),
+      theme: String(theme)
     }
   }
 }

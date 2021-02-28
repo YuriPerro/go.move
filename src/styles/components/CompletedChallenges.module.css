@@ -18,6 +18,6 @@
 }
 
 .completedChallengesContainer span:last-child{
-    color: var(--text);
+    color: var(--primary);
     font: 800 1.8rem "Rajdhani", sans-serif;
 }

@@ -2,7 +2,6 @@ import { useContext, useEffect } from 'react'
 import styles from '../styles/components/SideBar.module.css'
 import { HOME, RANKING } from "../constants/variables";
 
-
 import { SideBarContext } from '../contexts/SideBarContext';
 import { DarkModeContext } from '../contexts/DarkModeContext';
 
@@ -12,7 +11,6 @@ export function SideBar() {
     const { changeTab, tableActive } = useContext(SideBarContext)
 
     useEffect(() => {
-        console.log(DarkModeActive)
     }, [DarkModeActive])
 
     return (
