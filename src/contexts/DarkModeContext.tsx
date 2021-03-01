@@ -30,7 +30,7 @@ export function DarkModeProvider({ children, ...rest }: DarkModeProviderProps) {
             root.setProperty('--secondary-hover', "#18ABA4")
             root.setProperty('--background-modal', "rgba(0, 0, 0, 0.6)")
             root.setProperty('--background-modal-center', "rgba(20, 20, 20, 1)")
-
+            root.setProperty('--title', "#E7E7E7")
         } 
         else {
             Cookies.set('theme', LIGHT);
@@ -42,7 +42,7 @@ export function DarkModeProvider({ children, ...rest }: DarkModeProviderProps) {
             root.setProperty('--secondary-hover', "#D9706E")
             root.setProperty('--background-modal', "rgba(242, 243, 245, 0.8)")
             root.setProperty('--background-modal-center', "rgba(242, 243, 245, 0.8)")
-
+            root.setProperty('--title', "#2e384d")
         }
         
         //root.getPropertyValue(props)

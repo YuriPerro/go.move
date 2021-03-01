@@ -72,12 +72,11 @@
 }
 
 .countdownButtonActive{
-    background: var(--white);
     color: var(--red);
     outline: none;
     box-shadow: none;
 
-    border: 1px solid var(--red);
+    border: 2px solid var(--red);
 }
 
 .countdownButtonActive:not(:disabled):hover{

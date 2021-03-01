@@ -16,8 +16,8 @@
 }
 
 .container > img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 50px;
+    max-height: 50px;
 
     top: 1rem;
     position: absolute;
