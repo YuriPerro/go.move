@@ -45,4 +45,4 @@ or
 ```
 
 ---
-<p align="center">Developed with 🧡 by Yuri Baumgartner</p>
+<p align="center">Developed with 💜 by Yuri Baumgartner</p>
