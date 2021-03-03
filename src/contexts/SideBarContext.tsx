@@ -1,27 +1,35 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 import { HOME, RANKING } from "../constants/variables";
+import Cookies from 'js-cookie';
+import { route } from "next/dist/next-server/server/router";
 
 
 interface SideBarData {
-    tableActive: string
-    changeTab: (route: string) => void
+    currentRoute: string
+    changeRoute: (route: string) => void
 }
 
 interface SideBarProviderProps {
     children: ReactNode;
+    route: string;
 }
 
 export const SideBarContext = createContext({} as SideBarData);
 
-export function SideBarProvider({ children }: SideBarProviderProps) {
-    const [tableActive, setTableActive] = useState(RANKING);
+export function SideBarProvider({ children, ...props }: SideBarProviderProps) {
+    console.log("ROTA ATUAL: " + props.route)
+    const [currentRoute, setCurrentRoute] = useState(props.route ?? "");
 
-    function changeTab(route: string) {
-        route == HOME ? setTableActive(RANKING) : setTableActive(HOME)
+    function changeRoute(route: string) {
+        setCurrentRoute(route)
     }
 
+    useEffect(() => {
+        Cookies.set('route', currentRoute);
+    }, [currentRoute])
+
     return (
-        <SideBarContext.Provider value={{ changeTab, tableActive }}>
+        <SideBarContext.Provider value={{ currentRoute, changeRoute }}>
             {children}
         </SideBarContext.Provider>
     )

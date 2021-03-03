@@ -7,8 +7,14 @@ import { DarkModeButton } from "../components/DarkModeButton";
 import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
 import { DarkModeProvider } from "../contexts/DarkModeContext";
+import { POINT_CONVERSION_COMPRESSED } from 'constants';
 
-export default function ranking(props) {
+interface rankingDataProps {
+  theme: string,
+  route: string
+}
+
+export default function ranking(props: rankingDataProps) {
   return (
     <>
       <DarkModeProvider
@@ -16,7 +22,9 @@ export default function ranking(props) {
       >
         <DarkModeButton />
 
-          <SideBarProvider>
+          <SideBarProvider
+            route={props.route}
+          >
             <SideBar />
             <div className={styles.container}>
               <Head>
@@ -33,11 +41,12 @@ export default function ranking(props) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  const { theme } = ctx.req.cookies;
+  const { theme, route } = ctx.req.cookies;
 
   return {
     props: {
-      theme: String(theme)
+      theme: String(theme),
+      route: String(route)
     }
   }
 }

@@ -10,10 +10,7 @@ import Link from 'next/link';
 export function SideBar() {
 
     const { DarkModeActive } = useContext(DarkModeContext)
-    const { changeTab, tableActive } = useContext(SideBarContext)
-
-    useEffect(() => {
-    }, [DarkModeActive])
+    const { currentRoute, changeRoute } = useContext(SideBarContext)
 
     return (
         <div className={styles.container}>
@@ -24,12 +21,12 @@ export function SideBar() {
             }
             <div className={styles.divIcons}>
 
-                <Link href="/index">
-                    <input onClick={() => changeTab(HOME)} className={styles.iconHome} type="image" src={tableActive == HOME ? "/icons/home.svg" : "/icons/home-active.svg"} />
+                <Link href="/">
+                    <input onClick={() => changeRoute(HOME)} className={styles.iconHome} type="image" src={currentRoute != HOME ? "/icons/home.svg" : "/icons/home-active.svg"} />
                 </Link>
 
                 <Link href="/ranking">
-                    <input onClick={() => changeTab(RANKING)} className={styles.iconMedal} type="image" src={tableActive == RANKING ? "/icons/medal.svg" : "/icons/medal-active.svg"} />
+                    <input onClick={() => changeRoute(RANKING)} className={styles.iconMedal} type="image" src={currentRoute != RANKING ? "/icons/medal.svg" : "/icons/medal-active.svg"} />
                 </Link>
 
             </div>

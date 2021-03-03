@@ -15,12 +15,14 @@ import { ChallengesProvider } from "../contexts/ChallengesContext";
 import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
 import { DarkModeProvider } from "../contexts/DarkModeContext";
+import { route } from "next/dist/next-server/server/router";
 
 interface HomeDataProps {
   level: number
   currentXp: number
   challengesCompleted: number
   theme: string
+  route: string
 }
 
 export default function Home(props: HomeDataProps) {
@@ -35,7 +37,9 @@ export default function Home(props: HomeDataProps) {
           currentXp={props.currentXp}
           challengesCompleted={props.challengesCompleted
           }>
-          <SideBarProvider>
+          <SideBarProvider
+            route={props.route}
+          >
             <SideBar />
             <div className={styles.container}>
               <Head>
@@ -70,14 +74,15 @@ export default function Home(props: HomeDataProps) {
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
 
-  const { level, currentXp, challengesCompleted, theme } = ctx.req.cookies;
+  const { level, currentXp, challengesCompleted, theme,route } = ctx.req.cookies;
 
   return {
     props: {
       level: Number(level),
       currentXp: Number(currentXp),
       challengesCompleted: Number(challengesCompleted),
-      theme: String(theme)
+      theme: String(theme),
+      route: String(route)
     }
   }
 }
