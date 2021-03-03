@@ -16,7 +16,14 @@ import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
 import { DarkModeProvider } from "../contexts/DarkModeContext";
 
-export default function Home(props) {
+interface HomeDataProps {
+  level: number
+  currentXp: number
+  challengesCompleted: number
+  theme: string
+}
+
+export default function Home(props: HomeDataProps) {
   return (
     <>
       <DarkModeProvider
