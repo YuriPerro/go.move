@@ -3,7 +3,6 @@ import { HOME, RANKING } from "../constants/variables";
 import Cookies from 'js-cookie';
 import { route } from "next/dist/next-server/server/router";
 
-
 interface SideBarData {
     currentRoute: string
     changeRoute: (route: string) => void
@@ -17,8 +16,7 @@ interface SideBarProviderProps {
 export const SideBarContext = createContext({} as SideBarData);
 
 export function SideBarProvider({ children, ...props }: SideBarProviderProps) {
-    console.log("ROTA ATUAL: " + props.route)
-    const [currentRoute, setCurrentRoute] = useState(props.route ?? "");
+    const [currentRoute, setCurrentRoute] = useState(props.route ?? HOME);
 
     function changeRoute(route: string) {
         setCurrentRoute(route)

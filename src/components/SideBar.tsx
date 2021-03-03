@@ -25,7 +25,7 @@ export function SideBar() {
                     <input onClick={() => changeRoute(HOME)} className={styles.iconHome} type="image" src={currentRoute != HOME ? "/icons/home.svg" : "/icons/home-active.svg"} />
                 </Link>
 
-                <Link href="/ranking">
+                <Link href="/leaderboard">
                     <input onClick={() => changeRoute(RANKING)} className={styles.iconMedal} type="image" src={currentRoute != RANKING ? "/icons/medal.svg" : "/icons/medal-active.svg"} />
                 </Link>
 

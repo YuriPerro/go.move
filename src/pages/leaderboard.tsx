@@ -7,14 +7,14 @@ import { DarkModeButton } from "../components/DarkModeButton";
 import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
 import { DarkModeProvider } from "../contexts/DarkModeContext";
-import { POINT_CONVERSION_COMPRESSED } from 'constants';
+import LeaderboardComponent from '../components/LeaderboardComponent';
 
-interface rankingDataProps {
+interface leaderboardDataProps {
   theme: string,
   route: string
 }
 
-export default function ranking(props: rankingDataProps) {
+export default function Leaderboard(props: leaderboardDataProps) {
   return (
     <>
       <DarkModeProvider
@@ -31,7 +31,7 @@ export default function ranking(props: rankingDataProps) {
                 <title> Início • go.move</title>
               </Head>
 
-
+              <LeaderboardComponent/>
 
             </div>
           </SideBarProvider>

@@ -1,0 +1,105 @@
+.container {
+    flex: 1;
+}
+
+.container h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.headerListUsers {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headerListUsers > div:first-child {
+    margin-top: 30px;
+}
+
+.headerListUsers > div:last-child {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bodyListUsers {
+    display: flex;
+    flex-direction: row;
+}
+
+.bodyListUsers > div:first-child {
+    width: 10%;
+    height: 100px;
+    margin-bottom: 7px;
+    margin-right: 5px;
+
+    background: #fff;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.bodyListUsers > div:last-child {
+    width: 85%;
+    height: 100px;
+    margin-bottom: 7px;
+
+    background: #fff;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.position {
+    color: gray;
+    margin-right: 3rem;
+    margin-left: 1rem;
+}
+
+.user {
+    color: gray;
+    margin-right: 25rem;
+}
+
+.challenges {
+    color: gray;
+    margin-right: 7rem;
+}
+
+.experience {
+    color: gray;
+}
+
+.divProfile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userImage {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    margin-left: 1rem;
+}
+
+.userLevel {
+    margin-left: .5rem;
+}
+
+.userName {
+    margin-bottom: .3rem;
+}

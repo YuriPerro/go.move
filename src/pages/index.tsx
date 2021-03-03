@@ -55,13 +55,12 @@ export default function Home(props: HomeDataProps) {
                     <CompletedChallenges />
                     <Countdown />
                   </div>
-
                   <div>
                     <ChallengeBox />
                   </div>
                 </section>
                 <footer>
-                  Developed with 🧡 by Yuri Baumgartner
+                  Developed with 💜 by Yuri Baumgartner
                 </footer>
               </CountdownProvider>
             </div>
