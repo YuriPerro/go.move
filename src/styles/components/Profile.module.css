@@ -1,6 +1,18 @@
 .profileContainer {
     display: flex;
     align-items: center;
+
+    animation: profileContainer .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes profileContainer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .profileContainer > p > img {

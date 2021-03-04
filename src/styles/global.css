@@ -23,8 +23,6 @@
     --primary: #ff8282;
     --secondary: #1abeb6;
     --secondary-hover: #18ABA4;
-
-    --background-dark: #1C1C1C;
 }
 
 @media(max-width: 1080px){

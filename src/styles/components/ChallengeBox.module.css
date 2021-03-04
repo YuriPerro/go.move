@@ -11,6 +11,17 @@
     text-align: center;
 
     transition: background .4s;
+    animation: container .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes container {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
 }
 
 .challengeNotActive {

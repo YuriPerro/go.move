@@ -4,6 +4,18 @@
     font-family: Rajdhani;
     font-weight: 600;
     color: var(--title);
+
+    animation: container .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes container {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
 }
 
 .countdownContainer > div{
@@ -62,6 +74,18 @@
     transition: background-color 0.2s;
     outline: none;
     box-shadow: none;
+    
+    animation: btnCountdown .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes btnCountdown {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .countdownButton:not(:disabled):hover {

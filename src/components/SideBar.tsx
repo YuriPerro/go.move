@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 import styles from '../styles/components/SideBar.module.css'
 import { HOME, RANKING } from "../constants/variables";
 
@@ -20,15 +20,23 @@ export function SideBar() {
                 <img src="/LogoColorida.png" alt="Logo colorida side bar" />
             }
             <div className={styles.divIcons}>
-
                 <Link href="/">
-                    <input onClick={() => changeRoute(HOME)} className={styles.iconHome} type="image" src={currentRoute != HOME ? "/icons/home.svg" : "/icons/home-active.svg"} />
+                    <input
+                        onClick={() => changeRoute(HOME)}
+                        className={styles.iconHome}
+                        type="image"
+                        src={currentRoute != HOME ? "/icons/home.svg" : "/icons/home-active.svg"}
+                    />
                 </Link>
 
                 <Link href="/leaderboard">
-                    <input onClick={() => changeRoute(RANKING)} className={styles.iconMedal} type="image" src={currentRoute != RANKING ? "/icons/medal.svg" : "/icons/medal-active.svg"} />
+                    <input
+                        onClick={() => changeRoute(RANKING)}
+                        className={styles.iconMedal}
+                        type="image"
+                        src={currentRoute != RANKING ? "/icons/medal.svg" : "/icons/medal-active.svg"}
+                    />
                 </Link>
-
             </div>
         </div>
     )

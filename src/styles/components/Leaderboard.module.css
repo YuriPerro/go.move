@@ -39,13 +39,26 @@
     box-shadow: 0 0 10px rgba(136, 136, 136, 0.05);
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
-
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
     font-size: 22px;
     font-weight: 600;
+
+    animation: divUsers .2s;
+    animation-timing-function: linear;
+}
+
+@keyframes divUsers {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
 }
 
 .bodyListUsers > div:last-child {
@@ -61,6 +74,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    animation: divUsers .2s;
+    animation-timing-function: linear;
 }
 
 .textChallenges {

@@ -1,4 +1,4 @@
-import { createContext, useState, ReactNode, useEffect, VideoHTMLAttributes } from 'react';
+import { createContext, useState, ReactNode, useEffect } from 'react';
 import Cookies from 'js-cookie';
 import challenges from '../../challenges.json';
 import { LevelUpModal } from '../components/LevelUpModal';

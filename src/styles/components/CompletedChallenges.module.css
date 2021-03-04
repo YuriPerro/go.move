@@ -10,6 +10,18 @@
     border-bottom: 1px solid #d7d8da;
 
     font-weight: 500;
+
+    animation: container .4s;
+    animation-timing-function: linear;
+}
+
+@keyframes container {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
 }
 
 .completedChallengesContainer span:first-child{

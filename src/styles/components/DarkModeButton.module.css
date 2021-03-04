@@ -23,13 +23,14 @@
     margin-top: 3px;
     margin-left: 2px;
 
+    cursor: pointer;
+
     position: absolute;
 
     outline: none;
     box-shadow: none;
 
     transition: background 0.5s, margin-top 0.2s;
-
     appearance: none;
 }
 

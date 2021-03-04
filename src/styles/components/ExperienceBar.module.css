@@ -1,6 +1,18 @@
 .experienceBar {
     display: flex;
     align-items: center;
+
+    animation-timing-function: ease;
+    animation: experienceBar .2s;
+}
+
+@keyframes experienceBar {
+    from {
+        transform: translateY(-100vh);
+    }
+    to {
+        transform: translateY(0vh);
+    }
 }
 
 .experienceBar span{
