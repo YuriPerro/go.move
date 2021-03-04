@@ -14,13 +14,13 @@ interface DarkModeProviderProps {
 
 export const DarkModeContext = createContext({} as DarkModeData);
 
-export function DarkModeProvider({ children, ...rest }: DarkModeProviderProps) {    
-    const [DarkModeActive, setActive] = useState(rest.theme != null && rest.theme === DARK ? true : false );
-    
+export function DarkModeProvider({ children, ...rest }: DarkModeProviderProps) {
+    const [DarkModeActive, setActive] = useState(rest.theme != null && rest.theme === DARK ? true : false);
+
     useEffect(() => {
         let root = document.documentElement.style;
 
-        if(DarkModeActive){
+        if (DarkModeActive) {
             Cookies.set('theme', DARK);
 
             root.setProperty('--background', '#1C1C1C')
@@ -31,7 +31,7 @@ export function DarkModeProvider({ children, ...rest }: DarkModeProviderProps) {
             root.setProperty('--background-modal', "rgba(0, 0, 0, 0.6)")
             root.setProperty('--background-modal-center', "rgba(20, 20, 20, 1)")
             root.setProperty('--title', "#E7E7E7")
-        } 
+        }
         else {
             Cookies.set('theme', LIGHT);
 
@@ -44,10 +44,11 @@ export function DarkModeProvider({ children, ...rest }: DarkModeProviderProps) {
             root.setProperty('--background-modal-center', "rgba(242, 243, 245, 0.8)")
             root.setProperty('--title', "#2e384d")
         }
-        
-        //root.getPropertyValue(props)
+
+        //console.warn(root.getPropertyValue("--background"))
+
     }, [DarkModeActive])
-    
+
 
     function toggleTheme() {
         setActive(!DarkModeActive);

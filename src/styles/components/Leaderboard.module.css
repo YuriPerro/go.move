@@ -36,6 +36,7 @@
     margin-right: 5px;
 
     background: var(--white);
+    box-shadow: 0 0 10px rgba(136, 136, 136, 0.05);
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 
@@ -53,6 +54,7 @@
     margin-bottom: 7px;
 
     background: var(--white);
+    box-shadow: 0 0 10px rgba(136, 136, 136, 0.05);
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 
@@ -69,7 +71,7 @@
 .textExperience {
     font-size: 18px;
     margin-left: 9rem;
-
+    color: var(--primary);
 }
 
 .position {
@@ -113,4 +115,6 @@
 
 .userName {
     margin-bottom: .3rem;
+    font-size: 18px;
+    font-weight: 600;
 }

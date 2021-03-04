@@ -7,39 +7,39 @@ export default function LeaderboardComponent() {
 
     const [usersData, setUsersData] = useState([
         {
-            nome: "Yuri Perro",
+            nome: "#user2120",
             level: 120,
             picture: "https://github.com/YuriPerro.png",
-            challenges: 16,
+            challenges: 21,
             experience: 2146
         },
         {
-            nome: "Yuri Perro",
-            level: 120,
+            nome: "#user2653",
+            level: 80,
             picture: "https://github.com/YuriPerro.png",
-            challenges: 16,
-            experience: 2146
+            challenges: 17,
+            experience: 2130
         },
         {
-            nome: "Yuri Perro",
-            level: 120,
+            nome: "#user2101",
+            level: 77,
             picture: "https://github.com/YuriPerro.png",
-            challenges: 16,
-            experience: 2146
+            challenges: 14,
+            experience: 1940
         },
         {
-            nome: "Yuri Perro",
-            level: 120,
+            nome: "#user2169",
+            level: 55,
             picture: "https://github.com/YuriPerro.png",
-            challenges: 16,
-            experience: 2146
+            challenges: 12,
+            experience: 1980
         },
         {
-            nome: "Yuri Perro",
-            level: 120,
+            nome: "#user213",
+            level: 46,
             picture: "https://github.com/YuriPerro.png",
-            challenges: 16,
-            experience: 2146
+            challenges: 10,
+            experience: 214
         },
     ])
 
@@ -58,14 +58,14 @@ export default function LeaderboardComponent() {
                 </div>
             </div>
             <div style={{ marginTop: 15 }}>
-                {usersData.map((user) =>
+                {usersData.map((user, index) =>
                     <div className={styles.bodyListUsers}>
                         <div>
-                            1
+                            {index + 1}
                         </div>
                         <div>
                             <div className={styles.divProfile}>
-                                <img className={styles.userImage} src={user.picture} alt="Users images" />
+                                <img className={styles.userImage} src="/userImage.png" alt="Users images" />
                                 <div style={{ display: "flex", flexDirection: "column", marginLeft: "1rem" }}>
                                     <p className={styles.userName}>
                                         {user.nome}

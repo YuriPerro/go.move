@@ -8,10 +8,10 @@ export function Profile() {
     return (
         <div className={styles.profileContainer}>
             <p>
-                <img src="https://github.com/YuriPerro.png" alt="Yuri Perro" />
+                <img src="/userImage.png" alt="Foto perfil" />
             </p>
             <div>
-                <strong>Yuri Perro</strong>
+                <strong>#user1707</strong>
                 <p>
                     <img src="icons/level.svg" alt="Level" />
                     Level {level}
