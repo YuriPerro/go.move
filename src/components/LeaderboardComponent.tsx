@@ -77,9 +77,9 @@ export default function LeaderboardComponent() {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
-                            <p>{user.challenges}</p>
-                            <p>{user.experience}xp</p>
+                            </div>      
+                            <p className={styles.textChallenges}>{user.challenges}</p>
+                            <p className={styles.textExperience}>{user.experience}xp</p>
                         </div>
                     </div>
                 )}

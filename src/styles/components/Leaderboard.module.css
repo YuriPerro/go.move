@@ -35,7 +35,7 @@
     margin-bottom: 7px;
     margin-right: 5px;
 
-    background: #fff;
+    background: var(--white);
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
 
@@ -52,13 +52,24 @@
     height: 100px;
     margin-bottom: 7px;
 
-    background: #fff;
+    background: var(--white);
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.textChallenges {
+    margin-left: 20rem;
+    font-size: 18px;
+}
+
+.textExperience {
+    font-size: 18px;
+    margin-left: 9rem;
+
 }
 
 .position {
@@ -93,7 +104,7 @@
 
     border-radius: 50%;
 
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .userLevel {
