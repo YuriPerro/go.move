@@ -6,6 +6,7 @@
 <p align="center">💡 Application aimed at improving the quality of life of programmers</p>
 <div align="center">
     <img src="https://img.shields.io/static/v1?label=React&message=v17.0.1&color=61DAFB&style=for-the-badge&logo=React" />
+    <img src="https://img.shields.io/static/v1?label=Next&message=v9.0&color=000&style=for-the-badge&logo=Next.js" />
 </div>
 
 ## 📦 Components
