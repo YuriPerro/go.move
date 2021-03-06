@@ -3,15 +3,15 @@
     align-items: center;
 
     animation-timing-function: ease;
-    animation: experienceBar .2s;
+    animation: experienceBar .7s;
 }
 
 @keyframes experienceBar {
     from {
-        transform: translateY(-100vh);
+        transform: translateY(-100%);
     }
     to {
-        transform: translateY(0vh);
+        transform: translateY(0%);
     }
 }
 

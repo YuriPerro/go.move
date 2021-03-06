@@ -5,16 +5,16 @@
     font-weight: 600;
     color: var(--title);
 
-    animation: container .4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation: experienceBar .5s;
 }
 
-@keyframes container {
-    from { 
-        opacity: 0; 
+@keyframes experienceBar {
+    from {
+        transform: translateY(100%);
     }
-    to { 
-        opacity: 1; 
+    to {
+        transform: translateY(0%);
     }
 }
 
@@ -75,16 +75,16 @@
     outline: none;
     box-shadow: none;
     
-    animation: btnCountdown .4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation: btnCountdown .5s;
 }
 
 @keyframes btnCountdown {
     from {
-        opacity: 0;
+        transform: translateY(100%);
     }
     to {
-        opacity: 1;
+        transform: translateY(0%);
     }
 }
 

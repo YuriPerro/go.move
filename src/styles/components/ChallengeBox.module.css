@@ -11,16 +11,16 @@
     text-align: center;
 
     transition: background .4s;
-    animation: container .4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation: challengeBox .6s;
 }
 
-@keyframes container {
-    from { 
-        opacity: 0; 
+@keyframes challengeBox {
+    from {
+        transform: translateY(30%);
     }
-    to { 
-        opacity: 1; 
+    to {
+        transform: translateY(0%);
     }
 }
 

@@ -11,16 +11,16 @@
 
     font-weight: 500;
 
-    animation: container .4s;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation: completeChallenges .8s;
 }
 
-@keyframes container {
-    from { 
-        opacity: 0; 
+@keyframes completeChallenges {
+    from {
+        transform: translateY(-100%);
     }
-    to { 
-        opacity: 1; 
+    to {
+        transform: translateY(0%);
     }
 }
 
