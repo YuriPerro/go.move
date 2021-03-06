@@ -1,7 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
 import { HOME, RANKING } from "../constants/variables";
 import Cookies from 'js-cookie';
-import { route } from "next/dist/next-server/server/router";
 
 interface SideBarData {
     currentRoute: string
@@ -16,7 +15,7 @@ interface SideBarProviderProps {
 export const SideBarContext = createContext({} as SideBarData);
 
 export function SideBarProvider({ children, ...props }: SideBarProviderProps) {
-    const [currentRoute, setCurrentRoute] = useState(props.route ?? HOME);
+    const [currentRoute, setCurrentRoute] = useState(props.route != null ? props.route : HOME);
 
     function changeRoute(route: string) {
         setCurrentRoute(route)

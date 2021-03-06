@@ -85,11 +85,13 @@ export default function LeaderboardComponent() {
                                         </div>
                                     </div>
                                 </div>
-                                <p className={styles.textChallenges}>{user.challenges}</p>
-                                <p className={styles.textExperience}>{user.experience}xp</p>
+                                <div className={styles.divTexts}>
+                                    <p className={styles.textChallenges}>{user.challenges}</p>
+                                    <p className={styles.textExperience}>{user.experience}xp</p>
+                                </div>
                             </div>
                         </div>
-                    : null
+                        : null
                 )}
             </div>
 
