@@ -7,6 +7,8 @@
 <div align="center">
     <img src="https://img.shields.io/static/v1?label=React&message=v17.0.1&color=61DAFB&style=for-the-badge&logo=React" />
     <img src="https://img.shields.io/static/v1?label=Next&message=v9.0&color=000&style=for-the-badge&logo=Next.js" />
+    
+    [License](https://img.shields.io/static/v1?label=License&message=MIT&color=8ED500&style=for-the-badge)
 </div>
 
 ## 📦 Components
@@ -27,7 +29,7 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 
 * **React Native CLI** is a package that contains tools and helpers for React Native projects in form of a command line tool.  [Download React Native CLI](https://facebook.github.io/react-native/docs/getting-started)
 
-## 🛠 How to Install
+## ⚒️ How to Install
 
 * To download the project follow the instructions bellow:
 
