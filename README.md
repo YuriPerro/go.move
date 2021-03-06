@@ -1,4 +1,4 @@
-![go move](https://i.imgur.com/WXeFY6f.png)
+![go move](https://i.imgur.com/xSjzaal.png)
 
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">📍 go.move</a>
