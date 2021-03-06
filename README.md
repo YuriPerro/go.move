@@ -3,7 +3,7 @@
 <h1 align="center">
     <a href="https://pt-br.reactjs.org/">📍 go.move</a>
 </h1>
-<p align="center">Application aimed at improving the quality of life of programmers</p>
+<p align="center">💡 Application aimed at improving the quality of life of programmers</p>
 
 ## Components
 
