@@ -17,7 +17,7 @@
 * [Typescript.js](https://www.typescriptlang.org/)
 * [Next.js](https://nextjs.org/)
 
-## 🔎 Getting Started
+## 🚀 Getting Started
 
 These instructions will get you a copy of the full project up and running on your local machine for development and testing purposes.
 
