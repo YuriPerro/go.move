@@ -33,9 +33,22 @@
     border-radius: 4px;
     background-color: var(--primary);
 
-    box-shadow: 0 0 30px var(--primary);
+    animation-name: boxShadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 
-    transition: background-color .4s, box-shadow .4s;
+@keyframes boxShadow {
+    0%   { 
+        box-shadow: 0 0 20px var(--primary);
+    }
+    50%  { 
+        box-shadow: 0 0 0px var(--primary);
+    }
+    100% {
+        box-shadow: 0 0 20px var(--primary);
+    }
 }
 
 span.currentExperience {
