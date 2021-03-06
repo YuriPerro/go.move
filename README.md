@@ -5,7 +5,7 @@
 </h1>
 <p align="center">💡 Application aimed at improving the quality of life of programmers</p>
 <div align="center">
-    ![React](https://img.shields.io/static/v1?label=React&message=v17.0.1&color=61DAFB&style=for-the-badge&logo=React)
+    <img src="https://img.shields.io/static/v1?label=React&message=v17.0.1&color=61DAFB&style=for-the-badge&logo=React" />
 </div>
 
 ## 📦 Components
