@@ -1,6 +1,6 @@
 ![go move](https://i.imgur.com/WXeFY6f.png)
 
-# go.move
+<h1 align="center">go.move</h1>
 Application aimed at improving the quality of life of programmers
 
 ## Components
