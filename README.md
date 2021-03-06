@@ -5,7 +5,6 @@
 </h1>
 <p align="center">💡 Application aimed at improving the quality of life of programmers</p>
 <img align="center" src="https://img.shields.io/static/v1?label=npm&message=6.14.5&color=CB3837&style=for-the-badge&logo=npm" />
-![Badge](https://img.shields.io/static/v1?label=npm&message=6.14.5&color=CB3837&style=for-the-badge&logo=npm)
 
 ## 📦 Components
 
