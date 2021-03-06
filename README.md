@@ -5,13 +5,13 @@
 </h1>
 <p align="center">💡 Application aimed at improving the quality of life of programmers</p>
 
-## Components
+## 📦 Components
 
 * [React.js](https://pt-br.reactjs.org/)
 * [Typescript.js](https://www.typescriptlang.org/)
 * [Next.js](https://nextjs.org/)
 
-## Getting Started
+## 🔎 Getting Started
 
 These instructions will get you a copy of the full project up and running on your local machine for development and testing purposes.
 
@@ -23,7 +23,7 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 
 * **React Native CLI** is a package that contains tools and helpers for React Native projects in form of a command line tool.  [Download React Native CLI](https://facebook.github.io/react-native/docs/getting-started)
 
-## How to Install
+## 🛠 How to Install
 
 * To download the project follow the instructions bellow:
 
@@ -32,7 +32,7 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 2. cd go.move
 ```
 
-* Install the dependencies and start the server:
+*💻 Install the dependencies and start the server:
 
 ```
 3. yarn install
