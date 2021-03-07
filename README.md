@@ -1,7 +1,7 @@
 ![go move](https://i.imgur.com/xSjzaal.png)
 
 <h1 align="center">
-    <a href="gomove.vercel.app/">📍 go.move</a>
+    <a>📍 go.move</a>
 </h1>
 <p align="center">💡 Application aimed at improving the quality of life of programmers</p>
 <div align="center">
