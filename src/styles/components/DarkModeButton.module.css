@@ -40,10 +40,30 @@
 }
 
 .faSun {
-    transform: translateX(50%);
+    position: absolute;
+    left: .45rem;
+
+    animation: rotation 2s infinite linear;
 }
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 
 .faMoon {
     transform: translateX(50%);
+
+    animation: opacityMoon 1.5s infinite ease;
+}
+
+@keyframes opacityMoon {
+    0% { opacity: 1; }
+    50% { opacity: 0;}
+    100% { opacity: 1;}
 }
 

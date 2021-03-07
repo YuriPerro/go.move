@@ -15,7 +15,6 @@ import { ChallengesProvider } from "../contexts/ChallengesContext";
 import { SideBarProvider } from "../contexts/SideBarContext";
 import { SideBar } from "../components/SideBar";
 import { DarkModeProvider } from "../contexts/DarkModeContext";
-import { route } from "next/dist/next-server/server/router";
 
 interface HomeDataProps {
   level: number

@@ -23,6 +23,17 @@
     border: 2px solid var(--title);
     padding: 2px;
     box-shadow: 0 0 10px rgba(136, 136, 136, 0.7);
+
+}
+
+.svgLevel {
+    animation: svgLevel infinite ease 3s;
+}
+
+@keyframes svgLevel {
+    0% { transform: translateY(0%); }
+    50% { transform: translateY(50%); }
+    100% { transform: translateY(0%); }
 }
 
 .profileContainer div {
