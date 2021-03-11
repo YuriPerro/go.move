@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
-import { HOME, RANKING } from "../constants/variables";
+import { HOME } from "../constants/variables";
 import Cookies from 'js-cookie';
 
 interface SideBarData {
@@ -15,15 +15,15 @@ interface SideBarProviderProps {
 export const SideBarContext = createContext({} as SideBarData);
 
 export function SideBarProvider({ children, ...props }: SideBarProviderProps) {
-    const [currentRoute, setCurrentRoute] = useState(props.route != null ? props.route : HOME);
+    console.log(props.route == undefined )
+    
+    const [currentRoute, setCurrentRoute] = useState(props.route != "undefined" ? props.route : HOME);
 
     function changeRoute(route: string) {
         setCurrentRoute(route)
     }
 
-    useEffect(() => {
-        Cookies.set('route', currentRoute);
-    }, [currentRoute])
+    useEffect(() => { Cookies.set('route', currentRoute); }, [currentRoute]);
 
     return (
         <SideBarContext.Provider value={{ currentRoute, changeRoute }}>
