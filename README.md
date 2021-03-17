@@ -52,10 +52,10 @@ or
 4. npm dev
 ```
 
-## License
+## 📃License
 
-Licensed for users and contributors under MIT license.
-https://github.com/YuriPerro/go.move/blob/main/LICENSE
+* Licensed for users and contributors under MIT license.
+* [M.I.T](https://github.com/YuriPerro/go.move/blob/main/LICENSE)
 
 ---
 <p align="center">Developed with 💜 by Yuri Baumgartner</p>
