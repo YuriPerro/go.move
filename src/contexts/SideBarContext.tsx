@@ -15,7 +15,6 @@ interface SideBarProviderProps {
 export const SideBarContext = createContext({} as SideBarData);
 
 export function SideBarProvider({ children, ...props }: SideBarProviderProps) {
-    console.log(props.route == undefined )
     
     const [currentRoute, setCurrentRoute] = useState(props.route != "undefined" ? props.route : HOME);
 

@@ -22,19 +22,22 @@ export default function Leaderboard(props: leaderboardDataProps) {
       >
         <DarkModeButton />
 
-          <SideBarProvider
-            route={props.route}
-          >
-            <SideBar />
-            <div className={styles.container}>
-              <Head>
-                <title> Início • go.move</title>
-              </Head>
+        <SideBarProvider
+          route={props.route}
+        >
+          <SideBar />
+          <div className={styles.container}>
+            <Head>
+              <title> Início • go.move</title>
+            </Head>
 
-              <LeaderboardComponent/>
+            <LeaderboardComponent />
 
-            </div>
-          </SideBarProvider>
+          </div>
+          <footer>
+            Developed with 💜 by Yuri Baumgartner
+          </footer>
+        </SideBarProvider>
       </DarkModeProvider>
     </>
   )
