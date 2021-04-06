@@ -45,7 +45,7 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 4. yarn dev
 ```
 
-or
+<p align="center">or</p>
 
 ```
 3. npm install
