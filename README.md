@@ -57,5 +57,5 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 * Licensed for users and contributors under MIT license.
 * [M.I.T](https://github.com/YuriPerro/go.move/blob/main/LICENSE)
 
----
+```
 <p align="center">Developed with 💜 by Yuri Baumgartner</p>
