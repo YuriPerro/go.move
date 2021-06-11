@@ -21,7 +21,6 @@
 ## 🚀 Getting Started
 
 These instructions will get you a copy of the full project up and running on your local machine for development and testing purposes.
-
 The project can be built with npm or yarn, so choose one of the approach bellow in case you don't have any installed on your system.
 
 * **Npm** is distributed with Node.js which means that when you download Node.js, you automatically get npm installed on your computer. [Download Node.js](https://nodejs.org/en/download/)
