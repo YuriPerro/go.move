@@ -1,5 +1,6 @@
 ![go move](https://i.imgur.com/xSjzaal.png)
 
+
 <h1 align="center">
     <a>📍 go.move</a>
 </h1>
@@ -38,7 +39,7 @@ The project can be built with npm or yarn, so choose one of the approach bellow 
 2. cd go.move
 ```
 
-💻 Install the dependencies and start the server:
+💻 Install the dependencies and start the server
 
 ```
 3. yarn install
